@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hiyoko Saionji Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 24 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Hiyoko Saionji</h1><!--nombre-->
+			<h2>Ultimate Traditional Dancer</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Hiyoko_Saionji')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Hiyoko_Saionji/Hiyoko_Saionji_Halfbody_Sprite_(1).png" alt="Hiyoko_Saionji" id="Hiyoko_Saionji"> <!--nombre pj-->
+				<button onclick="nextImage('Hiyoko_Saionji')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(saionjiText)">Info</button>
+				<button onclick="showPresents(saionjiLoves, saionjiLikes)">Regalos</button>
+				<button onclick="showReportCard('saionjiReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const saionjiText = "Altura: 130cm  Peso: 31kg      Tamaño del Pecho: 64cm   Tipo de Sangre: B       Le Gusta: Squish Squishy      No le gusta: Conferencias, Cosas amargas"
+			const saionjiLoves = ["035.Cloth_Wrap_Backpack", "038.Biggest_Fantom", "077.Paper_10th_Act_Verse", "086.Century_Potpourri", "102.Rose_In_Vitro"]
+			const saionjiLikes = ["003.Coconut_Juice", "011.Gugelhupf_Cake", "013.Sweet_Bun_Bag", "015.Viva_Ice", "023.Falkor's_Muffler", "032.Silver_Ring", "033.Hope's_Peak_Ring", "037.Jabbaian_Jewelry", "045.Black_Rabbit_Picture_Book", "071.Antique_Doll", "073.Moon_Rock", "076.1000_Cherry_Blossoms", "078.Marine_Snow", "080.Mini_Wave-Dissipaters", "081.Stardust", "085.Bojobo_Dolls", "110.Secret_Wind_Sword_Book"]
+			const saionjiReport = "lmao"
+			showInfo(saionjiText)
+			createHeaderBar("Hiyoko_Saionji", "Ibuki_Mioda", "Gundham_Tanaka")
+		</script>
+	</body>
+</html>

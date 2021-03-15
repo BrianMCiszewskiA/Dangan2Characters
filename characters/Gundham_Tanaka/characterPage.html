@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gundham Tanaka Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 22 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Gundham Tanaka</h1><!--nombre-->
+			<h2>Ultimate Breeder</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Gundham_Tanaka')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Gundham_Tanaka/Gundham_Tanaka_Halfbody_Sprite_(1).png" alt="Gundham_Tanaka" id="Gundham_Tanaka"> <!--nombre pj-->
+				<button onclick="nextImage('Gundham_Tanaka')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(tanakaText)">Info</button>
+				<button onclick="showPresents(tanakaLoves, tanakaLikes)">Regalos</button>
+				<button onclick="showReportCard('tanakaReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const tanakaText = "Altura: 182cm  Peso: 74kg      Tamaño del Pecho: 93cm   Tipo de Sangre: A       Le Gusta: Cuatro Devas Oscuros de la Destruccion      No le gusta: Vida terrenal"
+			const tanakaLoves = ["018.Sunflower_Seeds", "031.Earring_of_Crushed_Evil", "056.Small_Degenerated_Reactor", "108.Angel's_Fruit"]
+			const tanakaLikes = ["004.Blue_Ram", "023.Falkor's_Muffler", "033.Hope's_Peak_Ring", "034.Spectre_Ring", "036.Another_Hope", "038.Biggest_Fantom", "062.Power_Gauntlet", "073.Moon_Rock", "076.1000_Cherry_Blossoms", "077.Paper_10th_Act_Verse", "081.Stardust", "086.Century_Potpourri", "087.Absolute_Tuning_Fork", "088.Seven_Sword", "089.Sand_God's_Storm_Horn", "097.Jabba_the_Frog", "098.Iguana_Daughter", "103.Skullhead_Mask"]
+			const tanakaReport = "lmao"
+			showInfo(tanakaText)
+			createHeaderBar("Gundham_Tanaka", "Hiyoko_Saionji", "Fuyuhiko_Kuzuryu")
+		</script>
+	</body>
+</html>
