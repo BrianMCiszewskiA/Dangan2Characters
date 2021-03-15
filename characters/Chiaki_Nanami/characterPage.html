@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chiaki Nanami Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 21 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Chiaki Nanami</h1><!--nombre-->
+			<h2>Ultimate Gamer</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Chiaki_Nanami')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Chiaki_Nanami/Chiaki_Nanami_Halfbody_Sprite_(1).png" alt="Chiaki_Nanami" id="Chiaki_Nanami"> <!--nombre pj-->
+				<button onclick="nextImage('Chiaki_Nanami')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(chiakiText)">Info</button>
+				<button onclick="showPresents(chiakiLoves, chiakiLikes)">Regalos</button>
+				<button onclick="showReportCard('chiakiReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const chiakiText = "Altura: 160cm  Peso: 46kg      Tamaño del Pecho: 88cm   Tipo de Sangre: O       Le Gusta: Videojuegos (incluso de mala calidad)      No le gusta: Despertadores"
+			const chiakiLoves = ["041.Tips_&_Tips_2nd_Edition", "062.Power_Gauntlet", "064.Nitro_Racer", "086.Century_Potpourri", "102.Rose_In_Vitro", "103.Skullhead_Mask"]
+			const chiakiLikes = ["015.Viva_Ice", "018.Sunflower_Seeds", "033.Hope's_Peak_Ring", "057.Many-Sided_Dice_Set", "058.The_Funbox", "059.The_Funplane", "065.Slap_Bracelet", "068.Go_Stone", "073.Moon_Rock", "078.Marine_Snow", "080.Mini_Wave-Dissipaters", "081.Stardust", "088.Seven_Sword"]
+			const chiakiReport = "lmao"
+			showInfo(chiakiText)
+			createHeaderBar("Chiaki_Nanami", "Fuyuhiko_Kuzuryu", "Byakuya_Togami")
+		</script>
+	</body>
+</html>
