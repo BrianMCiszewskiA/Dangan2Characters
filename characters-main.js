@@ -12,7 +12,7 @@ function nextImage(char){
 		num = num + 1
 	}
 	/* cambiar ruta al subirlo */
-	actualImage = "C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/" + char + "/" + char +  "_Halfbody_Sprite_(" + num.toString() + ").png"
+	actualImage = char +  "_Halfbody_Sprite_(" + num.toString() + ").png"
 	document.getElementById(char).setAttribute("src", actualImage)
 }
 
@@ -23,7 +23,7 @@ function prevImage(char){
 		num = num - 1
 	}
 	/* cambiar ruta al subirlo */
-	actualImage = "C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/" + char + "/" + char + "_Halfbody_Sprite_(" + num.toString() + ").png"
+	actualImage = char + "_Halfbody_Sprite_(" + num.toString() + ").png"
 	document.getElementById(char).setAttribute("src", actualImage)
 }
 
@@ -94,7 +94,7 @@ function showReportCard(pages){
 function addPresents(where, presents){
 	for(i=0; i < presents.length; i++){
 		present = document.createElement("IMG");
-		present.setAttribute("src", "C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/presents/" + presents[i] + ".png");
+		present.setAttribute("src", "presents/" + presents[i] + ".png");
 		present.setAttribute("alt", presents[i]);
 		present.setAttribute("title", presents[i]);
 		present.setAttribute("width", "5%");
@@ -134,14 +134,14 @@ function eliminarElemento(id){
 
 function createHeaderBar(selectedPj, nextPj, prevPj){
 	let headerBar = document.createElement("header");
-	let prevButton = createButton("Anterior", "window.open('C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/" + prevPj + "/characterPage.html', '_self')");
-	let nextButton = createButton("Siguiente", "window.open('C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/" + nextPj + "/characterPage.html', '_self')");
+	let prevButton = createButton("Anterior", "window.open('characters/" + prevPj + "/characterPage.html', '_self')");
+	let nextButton = createButton("Siguiente", "window.open('characters/" + nextPj + "/characterPage.html', '_self')");
 	headerBar.appendChild(prevButton);
 	for(h=0; h < allPj.length; h++){
 		sprite = document.createElement("IMG");
-		sprite.setAttribute("src", "C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/" + allPj[h] + "/" + allPj[h] + "_Island_Mode_Icon.png");
+		sprite.setAttribute("src", "characters/" + allPj[h] + "/" + allPj[h] + "_Island_Mode_Icon.png");
 		sprite.setAttribute("alt", allPj[h]);
-		sprite.setAttribute("onclick", "window.open('C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/" + allPj[h] + "/characterPage.html', '_self')");
+		sprite.setAttribute("onclick", "window.open('characters/" + allPj[h] + "/characterPage.html', '_self')");
 		sprite.setAttribute("width", "2.5%");
 		sprite.setAttribute("height", "2.5%");
 		sprite.setAttribute("id", allPj[h] + "_sprite")
