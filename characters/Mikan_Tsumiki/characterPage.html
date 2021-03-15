@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Mikan Tsumiki Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 24 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Mikan Tsumiki</h1><!--nombre-->
+			<h2>Ultimate Nurse</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Mikan_Tsumiki')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Mikan_Tsumiki/Mikan_Tsumiki_Halfbody_Sprite_(1).png" alt="Mikan_Tsumiki" id="Mikan_Tsumiki"> <!--nombre pj-->
+				<button onclick="nextImage('Mikan_Tsumiki')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(mikanText)">Info</button>
+				<button onclick="showPresents(mikanLoves, mikanLikes)">Regalos</button>
+				<button onclick="showReportCard('mikanReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const mikanText = "Altura: 165cm  Peso: 57kg      Tamaño del Pecho: 89cm   Tipo de Sangre: A       Le Gusta: Olores de baño, Alcohol      No le gusta: Cosas de gran tamaño"
+			const mikanLoves = ["025.Queen’s_Straitjacket", "055.Mr._Stapler", "109.Bandage_Wrap"]
+			const mikanLikes = ["022.Apron_Dress", "028.Safety_Half-Shoes", "029.Passionate_Glasses", "032.Silver_Ring", "033.Hope's_Peak_Ring", "035.Cloth_Wrap_Backpack", "037.Jabbaian_Jewelry", "042.Ogami_Clan_Codex", "048.Male_Cylinder", "049.Measuring_Flask", "051.Infrared_Thermometer", "066.Gag_Ball", "067.Kokeshi_Dynamo", "071.Antique_Doll", "085.Bojobo_Dolls", "086.Century_Potpourri", "093.Girl_with_the_Bear_Hairpin", "096.Tissue", "102.Rose_In_Vitro"]
+			const mikanReport = "lmao"
+			showInfo(mikanText)
+			createHeaderBar("Mikan_Tsumiki", "Nagito_Komaeda", "Mahiru_Koizumi")
+		</script>
+	</body>
+</html>

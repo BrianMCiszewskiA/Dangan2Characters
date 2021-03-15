@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Mahiru Koizumi Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 21 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Mahiru Koizumi</h1><!--nombre-->
+			<h2>Ultimate Photographer</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Mahiru_Koizumi')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Mahiru_Koizumi/Mahiru_Koizumi_Halfbody_Sprite_(1).png" alt="Mahiru_Koizumi" id="Mahiru_Koizumi"> <!--nombre pj-->
+				<button onclick="nextImage('Mahiru_Koizumi')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(mahiruText)">Info</button>
+				<button onclick="showPresents(mahiruLoves, mahiruLikes)">Regalos</button>
+				<button onclick="showReportCard('mahiruReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const mahiruText = "Altura: 165cm  Peso: 46kg      Tamaño del Pecho: 77cm   Tipo de Sangre: A       Le Gusta: Viajar sola      No le gusta: Malos modales"
+			const mahiruLoves = ["032.Silver_Ring", "054.Kirlian_Photography", "082.Japanese_Tea_Cup", "086.Century_Potpourri", "102.Rose_In_Vitro", "107.Compact_Costume"]
+			const mahiruLikes = ["022.Apron_Dress", "029.Passionate_Glasses", "033.Hope's_Peak_Ring", "037.Jabbaian_Jewelry", "039.Ubiquitous_Handbook", "044.Kiss_Note", "071.Antique_Doll", "073.Moon_Rock", "078.Marine_Snow", "080.Mini_Wave-Dissipaters", "081.Stardust", "085.Bojobo_Dolls", "093.Girl_with_the_Bear_Hairpin"]
+			const mahiruReport = "lmao"
+			showInfo(mahiruText)
+			createHeaderBar("Mahiru_Koizumi", "Mikan_Tsumiki", "Kazuichi_Soda")
+		</script>
+	</body>
+</html>
