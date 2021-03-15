@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nekomaru Nidai Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 15 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Nekomaru Nidai</h1><!--nombre-->
+			<h2>Ultimate Team Manager</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Nekomaru_Nidai')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Nekomaru_Nidai/Nekomaru_Nidai_Halfbody_Sprite_(1).png" alt="Nekomaru_Nidai" id="Nekomaru_Nidai"> <!--nombre pj-->
+				<button onclick="nextImage('Nekomaru_Nidai')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(nekomaruText)">Info</button>
+				<button onclick="showPresents(nekomaruLoves, nekomaruLikes)">Regalos</button>
+				<button onclick="showReportCard('nekomaruReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const nekomaruText = "Altura: 198cm  Peso: 122kg      Tamaño del Pecho: 122cm   Tipo de Sangre: A       Le Gusta: Toallas recien lavadas      No le gusta: Gente Floja"
+			const nekomaruLoves = ["019.Coconut", "024.Fresh_Bindings", "042.Ogami_Clan_Codex", "089.Sand_God's_Storm_Horn"]
+			const nekomaruLikes = ["008.Prepackaged_Orzotto", "021.Brightly_Colored_Jeans", "033.Hope's_Peak_Ring", "039.Ubiquitous_Handbook", "051.Infrared_Thermometer", "068.Go_Stone", "078.Marine_Snow", "085.Bojobo_Dolls", "086.Century_Potpourri", "096.Tissue", "102.Rose_In_Vitro"]
+			const nekomaruReport = "lmao"
+			showInfo(nekomaruText)
+			createHeaderBar("Nekomaru_Nidai", "Peko_Pekoyama", "Nagito_Komaeda")
+		</script>
+	</body>
+</html>

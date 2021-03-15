@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nagito Komaeda Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 26 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Nagito Komaeda</h1><!--nombre-->
+			<h2>Ultimate Lucky Student</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Nagito_Komaeda')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Nagito_Komaeda/Nagito_Komaeda_Halfbody_Sprite_(1).png" alt="Nagito_Komaeda" id="Nagito_Komaeda"> <!--nombre pj-->
+				<button onclick="nextImage('Nagito_Komaeda')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(nagitoText)">Info</button>
+				<button onclick="showPresents(nagitoLoves, nagitoLikes)">Regalos</button>
+				<button onclick="showReportCard('nagitoReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const nagitoText = "Altura: 180cm  Peso: 65kg      Tamaño del Pecho: 84cm   Tipo de Sangre: O       Le Gusta: Cosas Bonitas, Gente Bonita      No le gusta: Lugares Ruidosos, Gente Fea"
+			const nagitoLoves = ["033.Hope's_Peak_Ring", "090.Memory_Notebook", "091.Mukuro's_Knife"]
+			const nagitoLikes = ["004.Blue_Ram", "012.Hardtack_of_Hope", "015.Viva_Ice", "031.Earring_of_Crushed_Evil", "036.Another_Hope", "068.Go_Stone", "086.Century_Potpourri", "110.Secret_Wind_Sword_Book"]
+			const nagitoReport = "lmao"
+			showInfo(nagitoText)
+			createHeaderBar("Nagito_Komaeda", "Nekomaru_Nidai", "Mikan_Tsumiki")
+		</script>
+	</body>
+</html>

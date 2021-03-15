@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Peko Pekoyama Character Page</title>
+		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
+		<script type="text/javascript">
+			maxNum = 18 //cantidad max sprites pj
+		</script>
+		<style type="text/css">
+		section {
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		header {
+			background: purple;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Peko Pekoyama</h1><!--nombre-->
+			<h2>Ultimate Swordswoman</h2><!--ultimate-->
+			<div>
+				<button onclick="prevImage('Peko_Pekoyama')"><</button><!--nombre pj-->
+				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters/Peko_Pekoyama/Peko_Pekoyama_Halfbody_Sprite_(1).png" alt="Peko_Pekoyama" id="Peko_Pekoyama"> <!--nombre pj-->
+				<button onclick="nextImage('Peko_Pekoyama')">></button><!--nombre pj-->
+			</div>
+			<div id="infoBox">
+				<button onclick="showInfo(pekoText)">Info</button>
+				<button onclick="showPresents(pekoLoves, pekoLikes)">Regalos</button>
+				<button onclick="showReportCard('pekoReport')">Report Card</button>
+				
+			</div>
+		</section>
+		<script type="text/javascript">
+			const pekoText = "Altura: 172cm  Peso: 51kg      Tamaño del Pecho: 85cm   Tipo de Sangre: O       Le Gusta: Lo negro      No le gusta: Caramelo"
+			const pekoLoves = ["022.Apron_Dress", "071.Antique_Doll", "079.Gold_Coated_Sheath", "086.Century_Potpourri", "110.Secret_Wind_Sword_Book"]
+			const pekoLikes = ["007.Non-Alcoholic_Wine", "020.Iroha_T-Shirt", "024.Fresh_Bindings", "030.Bvlbari's_Gold", "032.Silver_Ring", "033.Hope's_Peak_Ring", "037.Jabbaian_Jewelry", "044.Kiss_Note", "057.Many-Sided_Dice_Set", "063.Mesopotamia", "074.Another_Battle", "077.Paper_10th_Act_Verse", "078.Marine_Snow", "080.Mini_Wave-Dissipaters", "081.Stardust", "082.Japanese_Tea_Cup", "085.Bojobo_Dolls", "088.Seven_Sword", "101.Lust_Setsugekka", "102.Rose_In_Vitro", "107.Compact_Costume"]
+			const pekoReport = "lmao"
+			showInfo(pekoText)
+			createHeaderBar("Peko_Pekoyama", "Sonia_Nevermind", "Nekomaru_Nidai")
+		</script>
+	</body>
+</html>
