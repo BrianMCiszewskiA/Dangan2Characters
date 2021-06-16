@@ -6,36 +6,11 @@
         <script type="text/javascript" src="chars.js"></script>
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="creator.js"></script>
-		<style type="text/css">
-			body {
-				background-image: url('background.png');
-				background-size: cover;
-			}
-			section {
-				text-align: center;
-				margin-right: auto;
-				margin-left: auto;
-			}
-			header {
-				text-align: center;
-				margin-right: auto;
-				margin-left: auto;
-				background: purple;
-			}
-			#charBox{
-				display: flex;
-			}
-			#imageBox{
-				margin-right: 5%;
-			}
-			#infoBox{
-				margin-left: 5%;
-			}
-		</style>
+		<link rel="stylesheet" href="charPageStyle.css">
 		<meta charset="utf-8"/>
-        <header id="headerBar"></header>
 	</head>
 	<body>
+        <header id="headerBar"></header>
 		<section id="mainBox">
 			<div id="nameBox">
                 <h1 id="name"></h1><!--nombre-->
@@ -43,11 +18,9 @@
             </div>
             <div id="charBox">
 			    <div id="imageBox">
-			    	<table>
-			    		<th><button onclick="" id="prevImage"><</button></th>
-			    		<th><img src="" alt="" id="pjSprite"></th>
-			    		<th><button onclick="" id="nextImage">></button></th>
-			    	</table>
+			    	<button onclick="" id="prevImage"><</button></th>
+			    	<img src="" alt="" id="pjSprite"></th>
+			    	<button onclick="" id="nextImage">></button></th>
 			    </div>
 			    <div id="infoBox">
 			    	<button onclick="showInfo()">Info</button>

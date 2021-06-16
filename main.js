@@ -161,6 +161,8 @@ function createHeaderBar() {
     "Siguiente",
     "changePjPage(nextPj())"
   );
+  prevButton.setAttribute("class", "pjButton");
+  nextButton.setAttribute("class", "pjButton");
   headerBar.appendChild(prevButton);
   for (h = 0; h < allPj.length; h++) {
     sprite = document.createElement("IMG");
@@ -173,8 +175,7 @@ function createHeaderBar() {
       "onclick",
       "changePjPage(" + allPj[h].nameCC() + ")"
     );
-    sprite.setAttribute("width", "2.5%");
-    sprite.setAttribute("height", "2.5%");
+    sprite.setAttribute("class", "miniSprites");
     sprite.setAttribute("id", allPj[h].name + "_sprite");
     headerBar.appendChild(sprite);
   }
@@ -183,7 +184,7 @@ function createHeaderBar() {
   document.getElementById("headerBar").appendChild(headerBar);
   document
     .getElementById(selectedPj.name + "_sprite")
-    .setAttribute("class", "selectedPj");
+    .setAttribute("class", "miniSprites selectedPj");
 }
 
 //crear el html
