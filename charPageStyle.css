@@ -17,6 +17,9 @@ header {
 	justify-content: space-around;
 	align-items: center;
 }
+.pjButton{
+	align-self: center;
+}
 #mainBox{
 	border-style: double;
 	border-radius: 25px;
@@ -36,9 +39,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 5%;
+	margin-left: 1%;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+	min-width: 910px;
+	min-height: 560px;
 }
 #infoBox{
 	border-style: double;
@@ -51,6 +56,9 @@ header {
 #nextImage{
 	justify-content: flex-end;
 }
+#pjSprite{
+	align-self: flex-end;
+}
 
 .miniSprites{
 	min-width: 2.5%;
@@ -61,7 +69,4 @@ header {
 .selectedPj{
 	border-style: solid;
 	border-color: white;
-}
-.pjButton{
-	align-items: center;
 }
