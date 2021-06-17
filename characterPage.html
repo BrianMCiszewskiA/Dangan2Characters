@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>_ Character Page</title>
-		<script type="text/javascript" src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters-main.js"></script>
-		<script type="text/javascript">
-			maxNum = _ //cantidad max sprites pj
-		</script>
-		<style type="text/css">
-		section {
-			text-align: center;
-			margin-right: auto;
-			margin-left: auto;
-		}
-		header {
-			background: purple;
-		}
-		</style>
+		<title></title>
+		<script type="text/javascript" src="classDanganChar.js"></script>
+        <script type="text/javascript" src="chars.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="creator.js"></script>
+		<link rel="stylesheet" href="charPageStyle.css">
+		<meta charset="utf-8"/>
 	</head>
 	<body>
-		<section>
-			<h1></h1><!--nombre-->
-			<h2></h2><!--ultimate-->
-			<div>
-				<button onclick="prevImage('')"><</button><!--nombre pj-->
-				<img src="C:/Users/brian/OneDrive/Escritorio/proyectos/proyectDanganronpa2/characters//_Halfbody_Sprite_(1).png" alt="" id=""> <!--nombre pj-->
-				<button onclick="nextImage('')">></button><!--nombre pj-->
-			</div>
-			<div id="infoBox">
-				<button onclick="showInfo(_Text)">Info</button>
-				<button onclick="showPresents(_Loves, _Likes)">Regalos</button>
-				<button onclick="showReportCard(_Report)">Report Card</button>
-				
-			</div>
+        <header id="headerBar"></header>
+		<section id="mainBox">
+			<div id="nameBox">
+                <h1 id="name"></h1><!--nombre-->
+			    <h2 id="ultimate"></h2><!--ultimate-->
+            </div>
+            <div id="charBox">
+			    <div id="imageBox">
+			    	<button onclick="" id="prevImage"><</button></th>
+			    	<img src="" alt="" id="pjSprite"></th>
+			    	<button onclick="" id="nextImage">></button></th>
+			    </div>
+			    <div id="infoBox">
+			    	<button onclick="showInfo()">Info</button>
+			    	<button onclick="showPresents()">Regalos</button>
+			    	<button onclick="showReportCard()">Report Card</button>    
+			    </div>
+        </div>
 		</section>
 		<script type="text/javascript">
-			const _Text = "Altura: cm  Peso: kg      Tamaño del Pecho: cm   Tipo de Sangre:        Le Gusta:       No le gusta: "
-			const _Loves = []
-			const _Likes = []
-			const _Report = "lmao"
-			showInfo(_Text)
+			changePjPage(actualPj);
 		</script>
 	</body>
 </html>
