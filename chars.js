@@ -105,7 +105,7 @@ const nagitoKomaeda = new Char(
   "Altura: 180cm  Peso: 65kg      Tamaño del Pecho: 84cm   Tipo de Sangre: O       Le Gusta: Cosas Bonitas, Gente Bonita      No le gusta: Lugares Ruidosos, Gente Fea", //infoText
   ["033.Hope's_Peak_Ring", "090.Memory_Notebook", "091.Mukuro's_Knife"], //presentsLoves
   ["004.Blue_Ram", "012.Hardtack_of_Hope", "015.Viva_Ice", "031.Earring_of_Crushed_Evil", "036.Another_Hope", "068.Go_Stone", "086.Century_Potpourri", "110.Secret_Wind_Sword_Book"], //presentsLikes
-  [], //reportCard
+  ["pendiente"], //reportCard
   26//maxNum
 );
 const nekomaruNidai = new Char(
