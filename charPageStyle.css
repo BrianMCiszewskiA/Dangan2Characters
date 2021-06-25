@@ -10,6 +10,7 @@ section {
 	background-color: rgba(0,0,0,0.5);
 }
 header {
+	visibility: hidden;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -21,7 +22,9 @@ header {
 .pjButton{
 	align-self: center;
 }
+
 #mainBox{
+	visibility: hidden;
 	border-style: double;
 	border-radius: 25px;
 	padding-bottom: 0px;

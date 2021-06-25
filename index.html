@@ -1,24 +1,18 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Danganronpa 2 Characters</title>
-		<style type="text/css">
-			section {
-			text-align: center;
-			margin-right: auto;
-			margin-left: auto;
-			margin-bottom: auto;
-			margin-top: auto;
-		}
-		</style>
-        <script type="text/javascript" src="classDanganChar.js"></script>
+		<title></title>
+		<script type="text/javascript" src="classDanganChar.js"></script>
         <script type="text/javascript" src="chars.js"></script>
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="creator.js"></script>
+		<link rel="stylesheet" href="charPageStyle.css">
+		<meta charset="utf-8"/>
 	</head>
 	<body>
-		<section>
+        <header id="headerBar"></header>
+        <section id="charSelect">
+        	<h2>Select a character</h2>
 			<div>
 				<button onclick="createHtml(hajimeHinata)">Hajime Hinata</button>
 				<button onclick="createHtml(akaneOwari)">Akane Owari</button>
@@ -40,5 +34,26 @@
 				<button onclick="createHtml(teruteruHanamura)">Teruteru Hanamura</button>
 			</div>
 		</section>
+		<section id="mainBox">
+			<div id="nameBox">
+                <h1 id="name"></h1><!--nombre-->
+			    <h2 id="ultimate"></h2><!--ultimate-->
+            </div>
+            <div id="charBox">
+			    <div id="imageBox">
+			    	<button onclick="" id="prevImage"><</button></th>
+			    	<img src="" alt="" id="pjSprite"></th>
+			    	<button onclick="" id="nextImage">></button></th>
+			    </div>
+			    <div id="infoBox">
+			    	<button onclick="showInfo()">Info</button>
+			    	<button onclick="showPresents()">Regalos</button>
+			    	<button onclick="showReportCard()">Report Card</button>    
+			    </div>
+        </div>
+		</section>
+		<script type="text/javascript">
+			changePjPage(actualPj);
+		</script>
 	</body>
 </html>
