@@ -45,6 +45,25 @@ function showInfo() {
   box.appendChild(info);
   box.setAttribute("id", "details");
   place.appendChild(box);
+  if(actualPjIsHajime()){
+    hideExtraButtons();
+  } else {
+    showExtraButtons();
+  }
+}
+
+function actualPjIsHajime(){
+  return actualPj.name == hajimeHinata.name;
+}
+
+function hideExtraButtons(){
+  document.getElementById("pButton").style.display = "none";
+  document.getElementById("rButton").style.display = "none";
+}
+
+function showExtraButtons(){
+  document.getElementById("pButton").style.display = "inline-block";
+  document.getElementById("rButton").style.display = "inline-block";
 }
 
 function showPresents() {

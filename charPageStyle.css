@@ -134,11 +134,29 @@ header {
 	width: 5%;
 }
 /* responsive */
-@media only screen and (max-width: 915px){
+@media only screen and (max-width: 1500px){
+	#mainBox{
+		display: grid;
+		grid-template-areas: 
+		'name'
+		'char';
+	}
+	#nameBox{
+		grid-area: name;
+	}
 	#charBox{
-		flex-direction: column;	
+		grid-area: char;
+		display: grid;
+		grid-template-areas: 
+		'image'
+		'info';	
+		justify-content: center;
+	}
+	#imageBox{
+		grid-area: image;
 	}
 	#infoBox{
+		grid-area: info;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
