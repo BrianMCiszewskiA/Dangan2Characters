@@ -96,8 +96,7 @@ function addPresents(where, presents) {
     present.setAttribute("src", "presents/" + presents[i] + ".png");
     present.setAttribute("alt", presents[i]);
     present.setAttribute("title", presents[i]);
-    present.setAttribute("width", "5%");
-    present.setAttribute("height", "5%");
+    present.setAttribute("class", "presentImage");
     where.appendChild(present);
   }
 }
@@ -154,11 +153,11 @@ function createHeaderBar() {
   let headerBar = document.createElement("div");
   let selectedPj = actualPj;
   let prevButton = createButton(
-    "Anterior",
+    "〈",
     "changePjPage(prevPj())"
   );
   let nextButton = createButton(
-    "Siguiente",
+    "〉",
     "changePjPage(nextPj())"
   );
   prevButton.setAttribute("class", "pjButton");
